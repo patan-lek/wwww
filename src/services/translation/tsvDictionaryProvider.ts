@@ -5,7 +5,7 @@ import type {
 } from "../../domain/vocabulary";
 
 const datasetUrl = new URL(
-  "../../dataset/words-eng-th/dataset_eng-th.tsv",
+  "../../dataset/words-eng-th/LEXiTRON_2.0_eng-th.tsv",
   import.meta.url,
 ).href;
 
