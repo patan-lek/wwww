@@ -2,6 +2,8 @@
 
 # wwww
 
+### whatwordwhatwhat
+
 **ตัวช่วยแปลและเก็บคำศัพท์ภาษาอังกฤษ–ไทย**
 
 [![React](https://img.shields.io/badge/React-19.2.6-149eca?logo=react&logoColor=white)](https://react.dev/)
