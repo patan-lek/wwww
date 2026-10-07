@@ -1,0 +1,130 @@
+.empty-state {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  padding: 58px 24px;
+  border: 1px solid #e9ecf3;
+  border-radius: 18px;
+  background: #fff;
+  color: #8b97ad;
+  text-align: center;
+}
+
+.empty-state svg {
+  color: #6478df;
+}
+
+.empty-state h2,
+.empty-state p {
+  margin: 0;
+}
+
+.empty-state h2 {
+  color: #28354e;
+  font-size: 20px;
+}
+
+.empty-state p {
+  max-width: 440px;
+}
+
+.collection-controls .part-filter-label {
+  height: auto;
+  min-height: 45px;
+  gap: 8px;
+  color: #7c879d;
+  font-size: 12px;
+}
+
+.collection-controls select {
+  min-height: 36px;
+  max-width: 190px;
+  border: 0;
+  background: transparent;
+  color: #46536f;
+}
+
+.collection-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: -6px 0 18px;
+}
+
+.collection-actions button {
+  border: 1px solid #e3e7f0;
+  border-radius: 9px;
+  background: #fff;
+  color: #566bd7;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 9px 13px;
+}
+
+.collection-actions button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.collection-actions [role="status"] {
+  color: #75819a;
+  font-size: 12px;
+}
+
+.lookup button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.pos-breakdown {
+  display: grid;
+  gap: 21px;
+  margin-top: 34px;
+}
+
+.pos-breakdown-row > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  color: #56637d;
+  font-size: 13px;
+}
+
+.pos-breakdown-row strong {
+  color: #5e70d5;
+}
+
+.pos-breakdown-track {
+  height: 7px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #eceffa;
+}
+
+.pos-breakdown-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #8190e7;
+}
+
+.stats {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+@media (max-width: 1080px) {
+  .collection-controls {
+    flex-wrap: wrap;
+  }
+
+  .stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
